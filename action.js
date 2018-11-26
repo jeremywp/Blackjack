@@ -15,7 +15,7 @@ deckPromise.then((data) => {
 });
 
 function drawP1() {
-    deckPromise.then((data) => {
+    cardPromise.then((data) => {
         getCards(data.deck_id, 1).then((cardData) => {
             $('#p1Cards').append("<img src='" + cardData.cards[0].image + "'>");
         })
@@ -23,7 +23,7 @@ function drawP1() {
 }
 
 function drawP2() {
-    deckPromise.then((data) => {
+    cardPromise.then((data) => {
         getCards(data.deck_id, 1).then((cardData) => {
             $('#p2Cards').append("<img src='" + cardData.cards[0].image + "'>");
         })
