@@ -1,4 +1,6 @@
-import {getDeck, getCards} from "API Module";
+import {getDeck} from "./API Module";
+
+import {getCards} from "./card Module";
 
 let deckPromise = getDeck();
 
